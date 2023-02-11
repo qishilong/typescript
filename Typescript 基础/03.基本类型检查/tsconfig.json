@@ -6,6 +6,7 @@
       "ES2016"
     ], // 配置编写代码的可用环境
     "outDir": "dist", // 配置指定的编译输出目录
+    "strictNullChecks": true, // 可以获得更严格的空类型检查，null和undefined只能赋值给自身。
   },
   "include": [
     "./src"

@@ -14,3 +14,18 @@ let phone: number = 1234545544;
  * 虽然没有明确规定，但根据习惯，电话号码应该是字符串格式
  */
 let phone1: string = "123456654";
+
+function fun(a: number, b: number): boolean {
+    if (a % b === 0) {
+        return true;
+    }
+    return false;
+}
+
+const num: number = 1;
+const str: string = "1";
+const obj: Object = {};
+const arr: number[] = [];
+const bool: boolean = true;
+const nu: null = null;
+const undef: undefined = undefined;
