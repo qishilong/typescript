@@ -81,3 +81,16 @@ obj2 = {
     a: "1",
     b: 1
 };
+
+// 类型别名
+type user = {
+    name: string;
+    age: number;
+    gender: "男" | "女";
+};
+
+let users: user = {
+    name: "小明",
+    age: 18,
+    gender: "男"
+};
