@@ -7,7 +7,7 @@ function sum(a: number, b: number) {
 }
 
 // sum("1", "2"); 
-console.log(sum(1, 2));
+sum(1, 2);
 
 let phone: number = 1234545544;
 /**
@@ -94,3 +94,46 @@ let users: user = {
     age: 18,
     gender: "男"
 };
+
+// 函数的相关约束
+// 函数重载
+// function combine(a: number | string, b: number | string): number | string {
+//     if (typeof a === "string" && typeof b === "string") {
+//         return a + b;
+//     } else if (typeof a === "number" && typeof b === "number") {
+//         return a * b;
+//     }
+//     throw new Error("a和b必须是同一类型");
+// }
+
+// combine("1", 1);
+
+function combine(a: number, b: number): number;
+function combine(a: string, b: string): number;
+function combine(a: number | string, b: number | string) {
+    if (typeof a === "string" && typeof b === "string") {
+        return a + b;
+    } else if (typeof a === "number" && typeof b === "number") {
+        return a * b;
+    }
+    throw new Error("a和b必须是同一类型");
+}
+
+combine(1, 1);
+combine("1", "1");
+
+// 可选参数
+function optional(a: number, b: string, c?: number) {
+    if (c) {
+        return a + b + c;
+    }
+    return a + b;
+}
+
+function optional1(a: number, b: string, c: number = 0) {
+    return a + b;
+};
+
+optional(1, "1", 1);
+
+optional1(1, "1");
