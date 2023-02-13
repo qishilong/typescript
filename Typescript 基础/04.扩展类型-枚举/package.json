@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "dev": "nodemon --watch src -e ts --exec ts-node src/learn/index.ts",
+    "practice": "nodemon --watch src -e ts --exec ts-node src/practice/index.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^18.13.0"
+  }
+}
