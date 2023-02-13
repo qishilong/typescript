@@ -13,6 +13,19 @@
     "noEmitOnError": true, // 配置错误时不生成编译结果
     "esModuleInterop": true, // 配置使用非es模块导出的仍旧可以使用 es 模块化交互
     "moduleResolution": "node", // 配置指定的模块解析策略
+    /**
+    Specify the module resolution strategy:
+      'node' for Node.js’ CommonJS implementation
+      'node16' or 'nodenext' for Node.js’ ECMAScript Module Support from TypeScript 4.7 onwards
+      'classic' used in TypeScript before the release of 1.6. You probably won’t need to use classic in modern code
+      Default: Classic if module is AMD, UMD, System or ES6/ES2015, Matches if module is node12 or nodenext, Node otherwise.
+
+      Allowed:
+      classic
+      node
+      node16
+      nodenext
+    */
   },
   "include": [
     "./src"
