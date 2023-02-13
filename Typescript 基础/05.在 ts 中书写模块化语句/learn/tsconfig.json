@@ -2,11 +2,15 @@
   "compilerOptions": { // 编译选项
     "target": "es2016", // 配置编译的目标代码的语言版本标准
     "module": "commonjs", // 配置编译目标使用的模块化语言标准
+    // "module": "ES6",
     "lib": [
       "ES2016"
     ], // 配置编写代码的可用环境
     "outDir": "dist", // 配置指定的编译输出目录
     "strictNullChecks": true, // 可以获得更严格的空类型检查，null和undefined只能赋值给自身。
+    "removeComments": true, // 配置编译结果中不包含注释
+    "noImplicitUseStrict": true, // 配置编译结果中不包含"use strict", 标记'noImplicitUseStrict'已弃用，将在TypeScript 5.5中停止运行。指定'ignoreDeprecations: "5.0"'来屏蔽此错误。
+    "noEmitOnError": true, // 配置错误时不生成编译结果
   },
   "include": [
     "./src"
