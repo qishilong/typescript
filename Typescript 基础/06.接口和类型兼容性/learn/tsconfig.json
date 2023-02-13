@@ -1,0 +1,36 @@
+{
+  "compilerOptions": { // 编译选项
+    "target": "es2016", // 配置编译的目标代码的语言版本标准
+    "module": "commonjs", // 配置编译目标使用的模块化语言标准
+    // "module": "ES6", // 因为当前的代码运行环境是 node 环境，所以编译为使用 ES6 模块化版本的代码直接在 node 环境运行会出错，需要配置 node 才能在 node 环境中运行使用 ES6 导入导出的代码
+    "lib": [
+      "ES2016"
+    ], // 配置编写代码的可用环境
+    "outDir": "dist", // 配置指定的编译输出目录
+    "strictNullChecks": true, // 可以获得更严格的空类型检查，null和undefined只能赋值给自身。
+    "removeComments": true, // 配置编译结果中不包含注释
+    // "noImplicitUseStrict": true, // 配置编译结果中不包含"use strict", 标记'noImplicitUseStrict'已弃用，将在TypeScript 5.5中停止运行。指定'ignoreDeprecations: "5.0"'来屏蔽此错误。
+    "noEmitOnError": true, // 配置错误时不生成编译结果
+    "esModuleInterop": true, // 配置使用非es模块导出的仍旧可以使用 es 模块化交互
+    "moduleResolution": "node", // 配置指定的模块解析策略
+    /**
+    Specify the module resolution strategy:
+      'node' for Node.js’ CommonJS implementation
+      'node16' or 'nodenext' for Node.js’ ECMAScript Module Support from TypeScript 4.7 onwards
+      'classic' used in TypeScript before the release of 1.6. You probably won’t need to use classic in modern code
+      Default: Classic if module is AMD, UMD, System or ES6/ES2015, Matches if module is node12 or nodenext, Node otherwise.
+
+      Allowed:
+      classic
+      node
+      node16
+      nodenext
+    */
+  },
+  "include": [
+    "./src"
+  ], // 表示要编译的文件夹，要编译哪个文件夹
+  // "files": [
+  //   "./src/index.ts"
+  // ], // 配置要编译的指定文件，可以配置一个，也可以配置一个，只会编译这个文件以及这个文件所依赖的文件
+}
