@@ -12,6 +12,7 @@
     "noImplicitUseStrict": true, // 配置编译结果中不包含"use strict", 标记'noImplicitUseStrict'已弃用，将在TypeScript 5.5中停止运行。指定'ignoreDeprecations: "5.0"'来屏蔽此错误。
     "noEmitOnError": true, // 配置错误时不生成编译结果
     "esModuleInterop": true, // 配置使用非es模块导出的仍旧可以使用 es 模块化交互
+    "moduleResolution": "node", // 配置指定的模块解析策略
   },
   "include": [
     "./src"
