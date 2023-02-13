@@ -1,7 +1,8 @@
 {
   "scripts": {
     "dev": "nodemon --watch src -e ts --exec ts-node src/learn/index.ts",
-    "practice": "nodemon --watch src -e ts --exec ts-node src/practice/index.ts"
+    "practice": "nodemon --watch src -e ts --exec ts-node src/practice/index.ts",
+    "extend": "nodemon --watch src -e ts --exec ts-node src/extend-枚举的位运算/index.ts"
   },
   "devDependencies": {
     "@types/node": "^18.13.0"
