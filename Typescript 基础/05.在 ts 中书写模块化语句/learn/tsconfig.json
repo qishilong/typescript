@@ -2,7 +2,7 @@
   "compilerOptions": { // 编译选项
     "target": "es2016", // 配置编译的目标代码的语言版本标准
     "module": "commonjs", // 配置编译目标使用的模块化语言标准
-    // "module": "ES6",
+    // "module": "ES6", // 因为当前的代码运行环境是 node 环境，所以编译为使用 ES6 模块化版本的代码直接在 node 环境运行会出错，需要配置 node 才能在 node 环境中运行使用 ES6 导入导出的代码
     "lib": [
       "ES2016"
     ], // 配置编写代码的可用环境
@@ -11,6 +11,7 @@
     "removeComments": true, // 配置编译结果中不包含注释
     "noImplicitUseStrict": true, // 配置编译结果中不包含"use strict", 标记'noImplicitUseStrict'已弃用，将在TypeScript 5.5中停止运行。指定'ignoreDeprecations: "5.0"'来屏蔽此错误。
     "noEmitOnError": true, // 配置错误时不生成编译结果
+    "esModuleInterop": true, // 配置使用非es模块导出的仍旧可以使用 es 模块化交互
   },
   "include": [
     "./src"
