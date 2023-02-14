@@ -109,7 +109,7 @@ funcType.delete();
 
 type Filter = (n: number) => boolean;
 
-const arr = [1, 2, 34, 3, 4, 3, 2, 3];
+const arr: number[] = [1, 2, 34, 3, 4, 3, 2, 3];
 
 const result = (arr: number[], callback: Filter) => {
     let res: number[] = [];
@@ -121,5 +121,4 @@ const result = (arr: number[], callback: Filter) => {
     console.log(res);
     return res;
 };
-
 result(arr, item => item % 2 === 0);

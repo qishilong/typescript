@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "use": "nodemon --watch src -e ts --exec ts-node src/在 ts 中使用模块化/index.ts"
+    "build": "rm -rf dist & tsc"
   },
   "devDependencies": {
     "@types/node": "^18.13.0"
