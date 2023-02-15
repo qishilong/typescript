@@ -13,6 +13,7 @@
     "noEmitOnError": true, // 配置错误时不生成编译结果
     "esModuleInterop": true, // 配置使用非es模块导出的仍旧可以使用 es 模块化交互
     "moduleResolution": "node", // 配置指定的模块解析策略
+    "strictPropertyInitialization": true, // 配置 当设置为true时，TypeScript将在声明类属性但未在构造函数中设置时引发错误。
     /**
     Specify the module resolution strategy:
       'node' for Node.js’ CommonJS implementation

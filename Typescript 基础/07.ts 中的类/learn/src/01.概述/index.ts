@@ -1,4 +1,4 @@
-class user {
+class User {
     name: string;
     age: number;
     constructor(name: string, age: number) {
@@ -7,4 +7,4 @@ class user {
     };
 }
 
-const userClass = new user("a", 18);
+const userClass = new User("a", 18);
