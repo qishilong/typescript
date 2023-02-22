@@ -24,7 +24,6 @@ const GameComp: FC = () => {
         setGameStatus(prev => prev = GameStatus.gaming);
     }, [reset]);
 
-    console.log(initArr, 11);
     // 判断胜负
     const judgmentResult = (chesses: ChessType[], index: number): GameStatus => {
         // 行最小值
@@ -60,7 +59,6 @@ const GameComp: FC = () => {
         setGameStatus(prev => prev = judgmentResult(chesses, index));
     };
 
-    console.log(initArr, 222);
     return (
         <div style={{ textAlign: "center" }}>
             <h1>井字棋游戏</h1>
