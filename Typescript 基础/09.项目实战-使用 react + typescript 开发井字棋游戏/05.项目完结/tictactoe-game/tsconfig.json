@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ], // 指定一组描述目标运行时环境的绑定库声明文件。
+    "allowJs": true, // 允许JavaScript文件成为程序的一部分。使用checkJS选项从这些文件中获取错误。
+    "skipLibCheck": true, // 跳过所有.d.ts文件的类型检查。
+    "esModuleInterop": true, // 生成额外的JavaScript以简化对导入CommonJS模块的支持。这使得allowsyntheticdefaulultimports具有类型兼容性。
+    "allowSyntheticDefaultImports": true, // 当模块没有默认导出时，允许“import x from y”。
+    "strict": true, // 启用所有严格的类型检查。
+    "forceConsistentCasingInFileNames": true, // 确保导入的实例是正确的。
+    "noFallthroughCasesInSwitch": true, // 为switch语句中的fallthrough情况启用错误报告。
+    "module": "esnext", // 配置模块化语言的标准
+    "moduleResolution": "node", // 指定TypeScript如何从给定的模块说明符查找文件。
+    "resolveJsonModule": true, // 启用能够导入.json文件
+    "isolatedModules": true, // 确保每个文件都可以安全地转译，而不依赖于其他导入。
+    "noEmit": true, // 不要发出编译器输出文件，如JavaScript源代码、源代码映射或声明。
+    "jsx": "react-jsx" // 配置指定生成什么jsx代码。 可配置项：preserve react react-native react-jsx react-jsxdev
+  },
+  "include": [
+    "src"
+  ]
+}
