@@ -27,11 +27,13 @@ const GameComp: FC = () => {
     console.log(initArr, 11);
     // 判断胜负
     const judgmentResult = (chesses: ChessType[], index: number): GameStatus => {
-        const horMin = Math.floor(index / 3) * 3;
-        const verMin = index % 3;
-        if ((chesses[horMin] === chesses[horMin + 1] && chesses[horMin] === chesses[horMin + 2])
+        // 行最小值
+        const rowMin = Math.floor(index / 3) * 3;
+        // 列最小值
+        const columnMin = index % 3;
+        if ((chesses[rowMin] === chesses[rowMin + 1] && chesses[rowMin] === chesses[rowMin + 2])
             ||
-            (chesses[verMin] === chesses[verMin + 3] && chesses[verMin] === chesses[verMin + 6])
+            (chesses[columnMin] === chesses[columnMin + 3] && chesses[columnMin] === chesses[columnMin + 6])
             ||
             (chesses[0] === chesses[4] && chesses[0] === chesses[8] && chesses[0] !== ChessType.none)
             ||
