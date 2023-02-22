@@ -40,8 +40,7 @@ const GameComp: FC = () => {
             (chesses[2] === chesses[4] && chesses[2] === chesses[6] && chesses[2] !== ChessType.none)) {
             if (chesses[index] === ChessType.red) {
                 return GameStatus.redWin;
-            }
-            else {
+            } else {
                 return GameStatus.blackWin;
             }
         }
